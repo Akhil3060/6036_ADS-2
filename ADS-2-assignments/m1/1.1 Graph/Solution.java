@@ -44,8 +44,11 @@ class Solution {
                 b = Integer.parseInt(nodes[1]);
 
                 // try {
-                graph[a][b] = 1;
-                graph[b][a] = 1;
+                if (a != b) {
+                    graph[a][b] = 1;
+                    graph[b][a] = 1;
+                }
+
                 // } catch (Exception e) {
                 // System.out.println("A " + a + "  b = " + b);
                 // }
