@@ -29,6 +29,8 @@ class Solution {
             // System.out.println("v =" + v);
             v = Integer.parseInt(sc.nextLine());
             e1 = Integer.parseInt(sc.nextLine());
+
+
             int[][] graph = new int[v][v];
 
             String[] line = sc.nextLine().split(",");
@@ -60,6 +62,9 @@ class Solution {
                     // System.out.println("arrlist " + arrlist);
                 }
                 // System.out.println();
+            }
+            if (v <= 0) {
+                System.out.println("No edges");
             }
             // System.out.println(hmap.get("Andhra Pradesh"));
 
