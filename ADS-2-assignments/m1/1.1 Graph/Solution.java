@@ -63,6 +63,8 @@ class Solution {
                 }
                 // System.out.println();
             }
+            System.out.println(v + " vertices, " + e1 + " edges");
+
             if (v <= 0) {
                 System.out.println("No edges");
             }
