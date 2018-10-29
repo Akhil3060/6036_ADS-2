@@ -73,7 +73,7 @@ class Solution {
                 System.out.println(v + " vertices, " + e1 + " edges");
 
             }
-            if (v <= 0) {
+            if (v <= 1) {
                 System.out.println("No edges");
             }
             // System.out.println(hmap.get("Andhra Pradesh"));
