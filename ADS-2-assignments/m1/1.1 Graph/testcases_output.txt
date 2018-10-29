@@ -183,7 +183,7 @@ Expected Output:
 No edges
 
 Your Output: 
-1 vertices, 1 edges
+1 vertices, 0 edges
 ----------------------------------------
 
 ########## Testcase 5: Passed ##########
