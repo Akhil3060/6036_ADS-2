@@ -16,7 +16,7 @@ Gujarat: Delhi Haryana
 Haryana: Gujarat Delhi
 
 Your Output: 
-Andhra Pradesh
+
 ----------------------------------------
 
 ########## Testcase 1: Passed ##########
@@ -94,7 +94,7 @@ Uttarakhand: Assam
 West Bengal: Uttar Pradesh Bihar
 
 Your Output: 
-Andhra Pradesh
+
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -183,8 +183,7 @@ Expected Output:
 No edges
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:36)
+
 ----------------------------------------
 
 ########## Testcase 5: Passed ##########
@@ -213,7 +212,6 @@ Expected Output:
 No edges
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:36)
+
 ----------------------------------------
 

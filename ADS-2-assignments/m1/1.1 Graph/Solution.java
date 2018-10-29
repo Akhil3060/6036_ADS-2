@@ -33,7 +33,7 @@ class Solution {
 
             String[] line = sc.nextLine().split(",");
 
-            System.out.println(line[1]);
+            // System.out.println(line[1]);
             // System.out.println("aaaaa" + graph.length);
 
             while (sc.hasNext()) {
