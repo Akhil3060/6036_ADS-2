@@ -57,11 +57,11 @@ class Solution {
                         // arrlist.put(nodes[]);
                     }
                     hmap.put(nodes[each[0]], arrlist);
-                    System.out.println("arrlist " + arrlist);
+                    // System.out.println("arrlist " + arrlist);
                 }
                 // System.out.println();
             }
-            System.out.println(hmap.get("Andhra Pradesh"));
+            // System.out.println(hmap.get("Andhra Pradesh"));
 
 
         } else if (type.equals("Matrix")) {
