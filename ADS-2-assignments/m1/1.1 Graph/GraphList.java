@@ -27,8 +27,8 @@ public class GraphList implements Graph {
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public GraphList(int V) {
-        if (V < 0) {
-            throw new IllegalArgumentException("Number of vertices must be nonnegative");
+        if (V < 0){
+         throw new IllegalArgumentException("Number of vertices must be nonnegative");
         }
         this.V = V;
         this.E = 0;
@@ -58,7 +58,7 @@ public class GraphList implements Graph {
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     private void validateVertex(int v) {
         if (v < 0 || v >= V) {
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));
+            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
         }
     }
 
