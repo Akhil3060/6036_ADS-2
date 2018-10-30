@@ -174,11 +174,15 @@ class Solution {
                 b = Integer.parseInt(nodes[1]);
                 if (a != b) {
                     graph[a][b] = 1;
-                    graph[b][a] = 1;
+                    if (graph[b][a] == 1) {
+                        e1--;
+                    } else {
+                        graph[b][a] = 1;
+                    }
                 }
-                if(a==b){
-                    e1--;
-                }
+                // if(a==b){
+                //     e1--;
+                // }
 
             }
             if (v == 1) {
