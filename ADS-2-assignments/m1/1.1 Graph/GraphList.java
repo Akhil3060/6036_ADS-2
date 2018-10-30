@@ -56,18 +56,23 @@ public class GraphList implements Graph {
     }
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    /**
+     * validateVertex.
+     *
+     * @param      v     { parameter_description }
+     */
     private void validateVertex(int v) {
         if (v < 0 || v >= V) {
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
         }
     }
 
+
     /**
-     * Adds the undirected edge v-w to this GraphList.
+     * Adds an edge.
      *
-     * @param  v one vertex in the edge
-     * @param  w the other vertex in the edge
-     * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
      */
     public void addEdge(int v, int w) {
         // validateVertex(v);
@@ -76,6 +81,15 @@ public class GraphList implements Graph {
         adj[v].add(w);
         adj[w].add(v);
     }
+
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
     public boolean hasEdge(int v, int w) {
         int count = 0;
         for (int i : adj[v]) {
@@ -96,24 +110,27 @@ public class GraphList implements Graph {
         return false;
     }
 
+
+
     /**
      * Returns the vertices adjacent to vertex {@code v}.
      *
-     * @param  v the vertex
-     * @return the vertices adjacent to vertex {@code v}, as an iterable
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      */
     public Iterable<Integer> adj(int v) {
         validateVertex(v);
         return adj[v];
     }
 
+
     /**
      * Returns the degree of vertex {@code v}.
      *
-     * @param  v the vertex
-     * @return the degree of vertex {@code v}
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      */
     public int degree(int v) {
         validateVertex(v);
@@ -121,11 +138,13 @@ public class GraphList implements Graph {
     }
 
 
+
     /**
      * Returns a string representation of this GraphList.
      *
-     * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,
-     *         followed by the <em>V</em> adjacency lists
+     * @param      data  The data
+     *
+     * @return     adjacency lists
      */
     public String display(String[] data) {
         StringBuilder s = new StringBuilder();
