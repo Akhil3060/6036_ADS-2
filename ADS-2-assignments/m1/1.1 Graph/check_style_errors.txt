@@ -1,16 +1,11 @@
 Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:18: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:20: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:33:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:66: Expected @return tag. [JavadocMethod]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:73: Expected @return tag. [JavadocMethod]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:80:21: Parameter item should be final. [FinalParameters]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:80:26: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:92: Expected @return tag. [JavadocMethod]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:127: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:77: Expected @return tag. [JavadocMethod]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:84:21: Parameter item should be final. [FinalParameters]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:84:26: Expected @param tag for 'item'. [JavadocMethod]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:133: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\GraphList.java:12:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\GraphList.java:16:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]

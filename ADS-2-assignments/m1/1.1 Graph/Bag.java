@@ -15,9 +15,11 @@ import java.util.NoSuchElementException;
  *  items in arbitrary order.
  *  <p>
  *  The <em>add</em>, <em>isEmpty</em>, and <em>size</em>  operation
- *  take constant time. Iteration takes time proportional to the number of items.
+ *  take constant time. Iteration takes time proportional to the number
+ *  of items.
  *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/13stacks">Section 1.3</a> of
+ *  For additional documentation, see
+ *  <a href="http://algs4.cs.princeton.edu/13stacks">Section 1.3</a> of
  *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  */
 
@@ -28,9 +30,9 @@ import java.util.NoSuchElementException;
  */
 public class Bag<Item> implements Iterable<Item> {
     /**
-     * N.
+     * n.
      */
-    private int N;         // number of elements in bag
+    private int n;         // number of elements in bag
     /**
      * first.
      */
@@ -57,12 +59,14 @@ public class Bag<Item> implements Iterable<Item> {
       */
     public Bag() {
         first = null;
-        N = 0;
+        n = 0;
     }
 
     /**
-      * Is the BAG empty?
-      */
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return first == null;
     }
@@ -71,7 +75,7 @@ public class Bag<Item> implements Iterable<Item> {
       * Return the number of items in the bag.
       */
     public int size() {
-        return N;
+        return n;
     }
 
     /**
@@ -82,13 +86,15 @@ public class Bag<Item> implements Iterable<Item> {
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        n++;
     }
 
 
     /**
-      * Return an iterator that iterates over the items in the bag.
-      */
+     * Iterator.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Iterator<Item> iterator()  {
         return new ListIterator();
     }
