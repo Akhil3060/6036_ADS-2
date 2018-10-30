@@ -177,7 +177,7 @@ class Solution {
                     graph[b][a] = 1;
                 }
                 if(a==b){
-                    v--;
+                    e1--;
                 }
 
             }
