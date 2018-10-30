@@ -11,11 +11,41 @@ import java.util.Collections;
  * Interface for graph.
  */
 interface Graph {
-
+    /**
+     * v.
+     *
+     * @return     { description_of_the_return_value }
+     */
     int V();
+    /**
+     * E.
+     *
+     * @return     { description_of_the_return_value }
+     */
     int E();
+    /**
+     * Adds an edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     */
     void addEdge(int v, int w);
+    /**
+     * Adjectent.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     Iterable<Integer> adj(int v);
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
     boolean hasEdge(int v, int w);
 }
 
