@@ -72,7 +72,7 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
     /**
-     * Return the number of items in the ba
+     * Return the number of items in the bag.
      *
      * @return     { description_of_the_return_value }
      */
