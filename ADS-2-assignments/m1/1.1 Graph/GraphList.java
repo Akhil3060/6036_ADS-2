@@ -19,12 +19,11 @@ public class GraphList implements Graph {
      */
     private Bag<Integer>[] adj;
 
+
     /**
-     * Initializes an empty GraphList with {@code v1} vertices and 0 edges.
-     * param v1 the number of vertices
+     * Constructs the object.
      *
-     * @param  v1 number of vertices
-     * @throws IllegalArgumentException if {@code v1 < 0}
+     * @param      v11   The v 11
      */
     public GraphList(final int v11) {
         if (v11 < 0) {
