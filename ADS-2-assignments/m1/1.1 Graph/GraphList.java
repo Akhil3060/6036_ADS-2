@@ -28,7 +28,9 @@ public class GraphList implements Graph {
      */
     public GraphList(final int V) {
         if (V < 0) {
-            throw new IllegalArgumentException("Number of vertices must be nonnegative");
+            throw new IllegalArgumentException("Number"
+                                               + " of vertices must"
+                                               + " be nonnegative");
         }
         this.V = V;
         this.E = 0;

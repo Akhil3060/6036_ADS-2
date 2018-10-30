@@ -8,11 +8,10 @@ Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\GraphList.java:16:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\GraphList.java:29:32: 'V' hides a field. [HiddenField]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\GraphList.java:29:32: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\GraphList.java:31: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\GraphList.java:45:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\GraphList.java:54:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\GraphList.java:47:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\GraphList.java:56:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:19:9: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
