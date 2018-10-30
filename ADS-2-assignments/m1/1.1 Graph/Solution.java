@@ -12,11 +12,11 @@ import java.util.Collections;
  */
 interface Graph {
 
-    public int V();
-    public int E();
-    public void addEdge(int v, int w);
-    public Iterable<Integer> adj(int v);
-    public boolean hasEdge(int v, int w);
+    int V();
+    int E();
+    void addEdge(int v, int w);
+    Iterable<Integer> adj(int v);
+    boolean hasEdge(int v, int w);
 }
 
 /**
@@ -34,7 +34,7 @@ class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String type = sc.nextLine();
         String[] nodes = new String[2];
@@ -55,8 +55,6 @@ class Solution {
                 }
             }
             System.out.println(g.display(input));
-
-
         } else if (type.equals("Matrix")) {
             v = 0;
             e1 = 0;

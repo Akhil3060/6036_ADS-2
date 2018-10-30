@@ -43,18 +43,12 @@ Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:7:8: Unused import - java.util.Set. [UnusedImports]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:8:8: Unused import - java.util.Collections. [UnusedImports]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:15:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:15:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:15:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:15:9: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:16:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:16:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:16:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:16:9: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:17:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:17:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:18:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:18:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:19:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:19:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:25:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:37:29: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 16 errors.
