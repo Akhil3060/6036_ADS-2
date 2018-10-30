@@ -26,7 +26,7 @@ public class GraphList implements Graph {
      * @param  V number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public GraphList(int V) {
+    public GraphList(final int V) {
         if (V < 0){
          throw new IllegalArgumentException("Number of vertices must be nonnegative");
         }
@@ -61,7 +61,7 @@ public class GraphList implements Graph {
      *
      * @param      v     { parameter_description }
      */
-    private void validateVertex(int v) {
+    private void validateVertex(final int v) {
         if (v < 0 || v >= V) {
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
         }
@@ -74,7 +74,7 @@ public class GraphList implements Graph {
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      */
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         // validateVertex(v);
         // validateVertex(w);
         E++;
@@ -90,7 +90,7 @@ public class GraphList implements Graph {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w) {
+    public boolean hasEdge(final int v, final int w) {
         int count = 0;
         for (int i : adj[v]) {
             if (i == w) {
@@ -119,7 +119,7 @@ public class GraphList implements Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         validateVertex(v);
         return adj[v];
     }
@@ -132,7 +132,7 @@ public class GraphList implements Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int degree(int v) {
+    public int degree(final int v) {
         validateVertex(v);
         return adj[v].size();
     }
@@ -146,7 +146,7 @@ public class GraphList implements Graph {
      *
      * @return     adjacency lists
      */
-    public String display(String[] data) {
+    public String display(final String[] data) {
         StringBuilder s = new StringBuilder();
         s.append(V + " vertices, " + E + " edges" + NEWLINE);
         if (E > 0) {
