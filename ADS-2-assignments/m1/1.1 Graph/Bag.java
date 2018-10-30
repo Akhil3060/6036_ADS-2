@@ -72,16 +72,20 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
     /**
-      * Return the number of items in the bag.
-      */
+     * Return the number of items in the ba
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int size() {
         return n;
     }
 
     /**
-      * Add the item to the bag.
-      */
-    public void add(Item item) {
+     * Add the item to the bag.
+     *
+     * @param      item  The item
+     */
+    public void add(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
@@ -130,7 +134,9 @@ public class Bag<Item> implements Iterable<Item> {
          * @return     { description_of_the_return_value }
          */
         public Item next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             Item item = current.item;
             current = current.next;
             return item;

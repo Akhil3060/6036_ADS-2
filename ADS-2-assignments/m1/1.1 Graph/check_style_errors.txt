@@ -1,11 +1,8 @@
 Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:77: Expected @return tag. [JavadocMethod]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:84:21: Parameter item should be final. [FinalParameters]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:84:26: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:133: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:74: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\GraphList.java:12:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\GraphList.java:16:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
@@ -58,12 +55,6 @@ Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:19:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:19:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:25:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:37:5: Method length is 183 lines (max allowed is 150). [MethodLength]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:37:29: Parameter args should be final. [FinalParameters]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:60: Line is longer than 80 characters (found 98). [LineLength]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:130: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:131: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:132: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m1\1.1 Graph\Solution.java:206:23: ')' is preceded with whitespace. [ParenPad]
 Audit done.
-Checkstyle ends with 28 errors.
+Checkstyle ends with 22 errors.
