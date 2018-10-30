@@ -26,16 +26,16 @@ public class GraphList implements Graph {
      * @param  v1 number of vertices
      * @throws IllegalArgumentException if {@code v1 < 0}
      */
-    public GraphList(final int v1) {
-        if (v1 < 0) {
+    public GraphList(final int v11) {
+        if (v11 < 0) {
             throw new IllegalArgumentException("Number"
                                                + " of vertices must"
                                                + " be nonnegative");
         }
-        this.v1 = v1;
+        this.v1 = v11;
         this.e1 = 0;
-        adj = (Bag<Integer>[]) new Bag[v1];
-        for (int v = 0; v < v1; v++) {
+        adj = (Bag<Integer>[]) new Bag[v11];
+        for (int v = 0; v < v11; v++) {
             adj[v] = new Bag<Integer>();
         }
     }
