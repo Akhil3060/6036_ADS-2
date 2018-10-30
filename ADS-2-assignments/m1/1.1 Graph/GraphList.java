@@ -7,35 +7,35 @@ public class GraphList implements Graph {
      */
     private static final String NEWLINE = System.getProperty("line.separator");
     /**
-     * V.
+     * v1.
      */
-    private final int V;
+    private final int v1;
     /**
-     * E.
+     * e1.
      */
-    private int E;
+    private int e1;
     /**
      * BAG.
      */
     private Bag<Integer>[] adj;
 
     /**
-     * Initializes an empty GraphList with {@code V} vertices and 0 edges.
-     * param V the number of vertices
+     * Initializes an empty GraphList with {@code v1} vertices and 0 edges.
+     * param v1 the number of vertices
      *
-     * @param  V number of vertices
-     * @throws IllegalArgumentException if {@code V < 0}
+     * @param  v1 number of vertices
+     * @throws IllegalArgumentException if {@code v1 < 0}
      */
-    public GraphList(final int V) {
-        if (V < 0) {
+    public GraphList(final int v1) {
+        if (v1 < 0) {
             throw new IllegalArgumentException("Number"
                                                + " of vertices must"
                                                + " be nonnegative");
         }
-        this.V = V;
-        this.E = 0;
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
+        this.v1 = v1;
+        this.e1 = 0;
+        adj = (Bag<Integer>[]) new Bag[v1];
+        for (int v = 0; v < v1; v++) {
             adj[v] = new Bag<Integer>();
         }
     }
@@ -44,8 +44,8 @@ public class GraphList implements Graph {
      *
      * @return the number of vertices in this GraphList
      */
-    public int V() {
-        return V;
+    public int v1() {
+        return v1;
     }
 
     /**
@@ -53,21 +53,21 @@ public class GraphList implements Graph {
      *
      * @return the number of edges in this GraphList
      */
-    public int E() {
-        return E;
+    public int e1() {
+        return e1;
     }
 
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    // throw an IllegalArgumentException unless {@code 0 <= v < v1}
     /**
      * validateVertex.
      *
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
-        if (v < 0 || v >= V) {
+        if (v < 0 || v >= v1) {
             throw new IllegalArgumentException("vertex " + v
                                                + " is not between 0 and "
-                                               + (V - 1));
+                                               + (v1 - 1));
         }
     }
 
@@ -81,7 +81,7 @@ public class GraphList implements Graph {
     public void addEdge(final int v, final int w) {
         // validateVertex(v);
         // validateVertex(w);
-        E++;
+        e1++;
         adj[v].add(w);
         adj[w].add(v);
     }
@@ -152,9 +152,9 @@ public class GraphList implements Graph {
      */
     public String display(final String[] data) {
         StringBuilder s = new StringBuilder();
-        s.append(V + " vertices, " + E + " edges" + NEWLINE);
-        if (E > 0) {
-            for (int v = 0; v < V; v++) {
+        s.append(v1 + " vertices, " + e1 + " edges" + NEWLINE);
+        if (e1 > 0) {
+            for (int v = 0; v < v1; v++) {
                 s.append(data[v] + ": ");
                 for (int w : adj[v]) {
                     s.append(data[w] + " ");

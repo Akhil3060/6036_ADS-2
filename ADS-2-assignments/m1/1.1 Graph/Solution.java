@@ -16,13 +16,13 @@ interface Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    int V();
+    int v1();
     /**
-     * E.
+     * e1.
      *
      * @return     { description_of_the_return_value }
      */
-    int E();
+    int e1();
     /**
      * Adds an edge.
      *
