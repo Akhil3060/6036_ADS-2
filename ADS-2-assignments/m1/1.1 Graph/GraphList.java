@@ -1,8 +1,22 @@
+/**
+ * List of graphs.
+ */
 public class GraphList implements Graph {
+    /**
+     * NEWLINE.
+     */
     private static final String NEWLINE = System.getProperty("line.separator");
-
+    /**
+     * V.
+     */
     private final int V;
+    /**
+     * E.
+     */
     private int E;
+    /**
+     * BAG.
+     */
     private Bag<Integer>[] adj;
 
     /**

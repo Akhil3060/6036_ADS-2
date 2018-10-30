@@ -7,8 +7,11 @@ import java.util.List;
 import java.util.Set;
 import java.util.Collections;
 
-
+/**
+ * Interface for graph.
+ */
 interface Graph {
+
     public int V();
     public int E();
     public void addEdge(int v, int w);
@@ -16,11 +19,21 @@ interface Graph {
     public boolean hasEdge(int v, int w);
 }
 
-
+/**
+ * Class for solution.
+ */
 class Solution {
+    /**
+     * Constructs the object.
+     */
     Solution() {
 
     }
+    /**
+     * Main.
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String type = sc.nextLine();
@@ -168,22 +181,19 @@ class Solution {
 
             // System.out.println(Arrays.deepToString(graph));
             int a, b;
-            while (sc.hasNext()) {
+            while      (sc.hasNext()) {
                 nodes = sc.nextLine().split(" ");
                 a = Integer.parseInt(nodes[0]);
                 b = Integer.parseInt(nodes[1]);
                 if (a != b) {
                     graph[a][b] = 1;
+
                     if (graph[b][a] == 1) {
                         e1--;
                     } else {
                         graph[b][a] = 1;
                     }
                 }
-                // if(a==b){
-                //     e1--;
-                // }
-
             }
             if (v == 1) {
                 System.out.println(v + " vertices, " + (e1 - 1) + " edges");
