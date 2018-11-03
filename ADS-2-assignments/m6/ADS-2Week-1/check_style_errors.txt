@@ -271,6 +271,7 @@ Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:36:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:36:29: Parameter args should be final. [FinalParameters]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:80:26: '0.25' is a magic number. [MagicNumber]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:134:38: '(' is followed by whitespace. [ParenPad]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:162:29: '10' is a magic number. [MagicNumber]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:167:49: ')' is preceded with whitespace. [ParenPad]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:183:12: 'for' is not followed by whitespace. [WhitespaceAround]
@@ -280,7 +281,7 @@ Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:184:39: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:184:40: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 24 errors.
+Checkstyle ends with 25 errors.
 Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
