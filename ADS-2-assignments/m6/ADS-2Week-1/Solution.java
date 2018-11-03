@@ -138,27 +138,51 @@ public class Solution {
         }
 
 
-        for (int i = 0; i < c; i++) {
+//         for (int i = 0; i < c; i++) {
+//             Double val = 0.0;
+//             for (int j = 0; j < 10; j++) {
+//                 val = 0.0;
+//                 try {
+//                     for (int each : mpinList.get(i)) {
+//                         val  += (curPR.get(each) ) / (mpout.get(each));
+//                     }
+//                     curPR.put(i, val);
+//                 } catch (Exception h) {
+//                     // System.out.println(i);
+//                     curPR.put(i, 0.0);
+//                 }
+
+//                 System.out.println("Iter =" + i + "-" + curPR);
+// //
+//             }
+//             System.out.println();
+//         }
             Double val = 0.0;
-            for (int j = 0; j < 1000; j++) {
+
+        for (int j = 0; j < 10; j++) {
+            for (int i = 0; i < c; i++) {
                 val = 0.0;
                 try {
                     for (int each : mpinList.get(i)) {
                         val  += (curPR.get(each) ) / (mpout.get(each));
                     }
                     curPR.put(i, val);
-                }
-                catch (Exception h) {
+                } catch (Exception h) {
                     // System.out.println(i);
                     curPR.put(i, 0.0);
                 }
 
-
+                // System.out.println("Iter =" + j + "-" + curPR);
             }
+            // System.out.println();
         }
-        System.out.println(curPR);
+        System.out.println();
 
+        // System.out.println(curPR);
 
+        for(int k : curPR.keySet()){
+            System.out.println(k+" - "+curPR.get(k));
+        }
     }
 
 }
