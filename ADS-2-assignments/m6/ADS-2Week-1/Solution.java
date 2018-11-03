@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.io.File;
-import java.util.Arrays;
+// import java.io.File;
+// import java.util.Arrays;
 import java.util.HashMap;
 
 
@@ -39,7 +39,7 @@ class WebSearch {
      * @param      rk    { parameter_description }
      * @param      name  The name
      */
-    WebSearch(PageRank rk, String name) {
+    WebSearch(final PageRank rk, final String name) {
 
     }
 
@@ -50,11 +50,17 @@ class WebSearch {
  */
 public class Solution {
     /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
+    /**
      * Main.
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // read the first line of the input to get the number of vertices
 
         // iterate count of vertices times
@@ -98,10 +104,13 @@ public class Solution {
             String[] line = sc.nextLine().split(" ");
             a = Integer.parseInt(line[0]);
             mpout.put(a, line.length - 1);
-            curPR.put(a, 0.25);
+            final double inValue = 0.25;
+            curPR.put(a, inValue);
             for (int i = 1; i < line.length; i++) {
                 b = Integer.parseInt(line[i]);
-                if (a != b) graph[a][b] = 1;
+                if (a != b) {
+                    graph[a][b] = 1;
+                }
                 e++;
                 li = mpinList.get(b);
                 // try {
