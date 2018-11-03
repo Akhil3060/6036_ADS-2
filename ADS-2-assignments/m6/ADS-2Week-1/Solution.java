@@ -131,7 +131,7 @@ public class Solution {
             for (int j = c - 1; j >= 0; j--) {
                 // System.out.println("test 2");
                 if (graph[i][j] == 1) {
-                    System.out.print(" " + j);
+                    System.out.print(" " + j + " ");
                 }
             }
             System.out.println();
