@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:177:49: ')' is preceded with whitespace. [ParenPad]
 Audit done.
-Checkstyle ends with 2 errors.

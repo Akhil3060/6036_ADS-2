@@ -174,7 +174,7 @@ final class Solution {
                 val = 0.0;
                 try {
                     for (int each : mpinList.get(i)) {
-                        val  += (curPR.get(each) ) / (mpout.get(each));
+                        val  += (curPR.get(each)) / (mpout.get(each));
                     }
                     curPR.put(i, val);
                 } catch (Exception h) {
@@ -196,3 +196,5 @@ final class Solution {
     }
 
 }
+
+
