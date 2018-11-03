@@ -5,12 +5,19 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 
-
+/**
+ * Class for page rank.
+ */
 class PageRank {
+    /**
+     * Constructs the object.
+     */
     PageRank() {
 
     }
-
+    /**
+     * Puts a pr.
+     */
     void putPR() {
 
     }
@@ -22,17 +29,31 @@ class PageRank {
     // }
 
 }
-
+/**
+ * Class for web search.
+ */
 class WebSearch {
+    /**
+     * Constructs the object.
+     *
+     * @param      rk    { parameter_description }
+     * @param      name  The name
+     */
     WebSearch(PageRank rk, String name) {
 
     }
 
 }
 
-
+/**
+ * Class for solution.
+ */
 public class Solution {
-
+    /**
+     * Main.
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         // read the first line of the input to get the number of vertices
 
@@ -80,7 +101,7 @@ public class Solution {
             curPR.put(a, 0.25);
             for (int i = 1; i < line.length; i++) {
                 b = Integer.parseInt(line[i]);
-                if(a!=b) graph[a][b] = 1;
+                if (a != b) graph[a][b] = 1;
                 e++;
                 li = mpinList.get(b);
                 // try {
@@ -137,27 +158,7 @@ public class Solution {
             System.out.println();
         }
 
-
-//         for (int i = 0; i < c; i++) {
-//             Double val = 0.0;
-//             for (int j = 0; j < 10; j++) {
-//                 val = 0.0;
-//                 try {
-//                     for (int each : mpinList.get(i)) {
-//                         val  += (curPR.get(each) ) / (mpout.get(each));
-//                     }
-//                     curPR.put(i, val);
-//                 } catch (Exception h) {
-//                     // System.out.println(i);
-//                     curPR.put(i, 0.0);
-//                 }
-
-//                 System.out.println("Iter =" + i + "-" + curPR);
-// //
-//             }
-//             System.out.println();
-//         }
-            Double val = 0.0;
+        Double val = 0.0;
 
         for (int j = 0; j < 10; j++) {
             for (int i = 0; i < c; i++) {
@@ -180,8 +181,8 @@ public class Solution {
 
         // System.out.println(curPR);
 
-        for(int k : curPR.keySet()){
-            System.out.println(k+" - "+curPR.get(k));
+        for (int k : curPR.keySet()) {
+            System.out.println(k + " - " + curPR.get(k));
         }
     }
 
