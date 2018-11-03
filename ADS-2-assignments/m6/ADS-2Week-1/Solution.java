@@ -48,7 +48,7 @@ class WebSearch {
 /**
  * Class for solution.
  */
-public class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
@@ -161,15 +161,15 @@ public class Solution {
             for (int j = c - 1; j >= 0; j--) {
                 // System.out.println("test 2");
                 if (graph[i][j] == 1) {
-                    System.out.print( j + " ");
+                    System.out.print(j + " ");
                 }
             }
             System.out.println();
         }
 
         Double val = 0.0;
-
-        for (int j = 0; j < 10; j++) {
+        final int size= 1000;
+        for (int j = 0; j < size; j++) {
             for (int i = 0; i < c; i++) {
                 val = 0.0;
                 try {
