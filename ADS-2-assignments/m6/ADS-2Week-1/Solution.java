@@ -168,7 +168,7 @@ final class Solution {
         }
 
         Double val = 0.0;
-        final int size= 1000;
+        final int size = 1000;
         for (int j = 0; j < size; j++) {
             for (int i = 0; i < c; i++) {
                 val = 0.0;
