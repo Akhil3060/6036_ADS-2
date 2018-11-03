@@ -80,7 +80,7 @@ public class Solution {
             curPR.put(a, 0.25);
             for (int i = 1; i < line.length; i++) {
                 b = Integer.parseInt(line[i]);
-                graph[a][b] = 1;
+                if(a!=b) graph[a][b] = 1;
                 e++;
                 li = mpinList.get(b);
                 // try {
