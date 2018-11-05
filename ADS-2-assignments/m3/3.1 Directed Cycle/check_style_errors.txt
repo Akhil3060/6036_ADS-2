@@ -5,10 +5,6 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:4:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
