@@ -65,11 +65,25 @@ public class Solution {
 
                 String str = line[0] + " ";
                 // System.out.println(dsp1.pathTo(b));
-                for (Edge e1 : dsp1.pathTo(b)) {
-                    str += e1.either() + " ";
-                }
-
+                // for (Edge e1 : dsp1.pathTo(b)) {
+                //     str += e1.either() + " ";
+                // }
+                // System.out.println("sss");
                 int var1 = a;
+                int var3=0;
+                for (Edge e1 : dsp1.pathTo(b)) {
+                    int var2 = e1.either();
+                    if (var1 == var2) {
+                        str += e1.other(var2) + " ";
+                    } else {
+                        str += var2 + " ";
+                    }
+                    var1 = var2;
+                    var3=var1;
+                    // str += e1.either() + " ";
+                }
+                // str += "qqqq";
+                 var1 = var3;
                 for (Edge e1 : dsp2.pathTo(c)) {
                     int var2 = e1.either();
                     if (var1 == var2) {
