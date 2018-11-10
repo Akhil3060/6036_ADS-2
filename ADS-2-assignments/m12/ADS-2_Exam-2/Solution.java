@@ -1,11 +1,20 @@
-import java.util.Scanner;
-public class Solution {
 
+import java.util.Scanner;
+/**
+ * Class for solution.
+ */
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
     // void Graph(){
 
     // }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // Self loops are not allowed...
         // Parallel Edges are allowed...
         // Take the Graph input here...
@@ -70,7 +79,7 @@ public class Solution {
                 // }
                 // System.out.println("sss");
                 int var1 = a;
-                int var3=0;
+                int var3 = 0;
                 for (Edge e1 : dsp1.pathTo(b)) {
                     int var2 = e1.either();
                     if (var1 == var2) {
@@ -79,11 +88,11 @@ public class Solution {
                         str += var2 + " ";
                     }
                     var1 = var2;
-                    var3=var1;
+                    var3 = var1;
                     // str += e1.either() + " ";
                 }
                 // str += "qqqq";
-                 var1 = var3;
+                var1 = var3;
                 for (Edge e1 : dsp2.pathTo(c)) {
                     int var2 = e1.either();
                     if (var1 == var2) {

@@ -556,17 +556,10 @@ Audit done.
 Checkstyle ends with 43 errors.
 Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:8:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:8:29: Parameter args should be final. [FinalParameters]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:73:25: '=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:73:26: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:82:25: '=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:82:26: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:118: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:17:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:127: Line is longer than 80 characters (found 98). [LineLength]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Stack.java:29: Line is longer than 80 characters (found 89). [LineLength]
