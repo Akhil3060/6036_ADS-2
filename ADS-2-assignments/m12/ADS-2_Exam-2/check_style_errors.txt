@@ -560,7 +560,7 @@ Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:8:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:8:29: Parameter args should be final. [FinalParameters]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:84: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:104: Line is longer than 80 characters (found 98). [LineLength]
 Audit done.
 Checkstyle ends with 6 errors.
 Starting audit...

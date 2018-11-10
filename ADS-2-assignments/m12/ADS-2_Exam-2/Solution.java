@@ -68,9 +68,29 @@ public class Solution {
                 for (Edge e1 : dsp1.pathTo(b)) {
                     str += e1.either() + " ";
                 }
+
+                int var1 = a;
                 for (Edge e1 : dsp2.pathTo(c)) {
-                    str += e1.either() + " ";
+                    int var2 = e1.either();
+                    if (var1 == var2) {
+                        str += e1.other(var2) + " ";
+                    } else {
+                        str += var2 + " ";
+                    }
+                    var1 = var2;
+                    // str += e1.either() + " ";
                 }
+
+
+                // for (Edge e2 : sp2.pathTo(Integer.parseInt(place[2]))) {
+                //     int temp = e2.either();
+                //     if (i == temp) {
+                //         str += e2.other(temp) + " ";
+                //     } else {
+                //         str += temp + " ";
+                //     }
+                //     i = temp;
+                // }
                 System.out.println(str);
 
 
