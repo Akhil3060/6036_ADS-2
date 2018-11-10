@@ -61,15 +61,20 @@ public class Solution {
             if (!dsp1.hasPathTo(c) || !dsp2.hasPathTo(c)) {
                 System.out.println("No Path Found.");
             } else {
-                System.out.println(dsp1.distTo[b]+dsp2.distTo[c]);
+                System.out.println(dsp1.distTo[b] + dsp2.distTo[c]);
 
-                // System.out.println(dsp2.distTo[c]);
-                // System.out.println(dsp3.distTo[a]);
-                // System.out.println(dsp1.edgeTo[b].either());
-                System.out.println(dsp2.edgeTo[c]);
-                // System.out.println(dsp1.edgeTo[c]);
-
+                String str = line[0] + " ";
                 // System.out.println(dsp1.pathTo(b));
+                for (Edge e1 : dsp1.pathTo(b)) {
+                    str += e1.either() + " ";
+                }
+                for (Edge e1 : dsp2.pathTo(c)) {
+                    str += e1.either() + " ";
+                }
+                System.out.println(str);
+
+
+                // System.out.println(dsp3.pathTo(b));
                 // System.out.println(dsp2.pathTo(c));
 
             }
