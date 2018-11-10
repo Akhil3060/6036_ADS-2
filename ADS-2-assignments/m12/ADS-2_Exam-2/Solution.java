@@ -51,6 +51,30 @@ public class Solution {
             break;
 
         case "ViaPaths":
+            line = sc.nextLine().split(" ");
+            a = Integer.parseInt(line[0]);
+            b = Integer.parseInt(line[1]);
+            int c = Integer.parseInt(line[2]);
+            DijkstraUndirectedSP dsp1 = new DijkstraUndirectedSP(g, a);
+            DijkstraUndirectedSP dsp2 = new DijkstraUndirectedSP(g, b);
+            // DijkstraUndirectedSP dsp3 = new DijkstraUndirectedSP(g, c);
+            if (!dsp1.hasPathTo(c) || !dsp2.hasPathTo(c)) {
+                System.out.println("No Path Found.");
+            } else {
+                System.out.println(dsp1.distTo[b]+dsp2.distTo[c]);
+
+                // System.out.println(dsp2.distTo[c]);
+                // System.out.println(dsp3.distTo[a]);
+                // System.out.println(dsp1.edgeTo[b].either());
+                System.out.println(dsp2.edgeTo[c]);
+                // System.out.println(dsp1.edgeTo[c]);
+
+                // System.out.println(dsp1.pathTo(b));
+                // System.out.println(dsp2.pathTo(c));
+
+            }
+
+
             // Handle the case of ViaPaths, where three integers are given.
             // First is the source and second is the via is the one where path should pass throuh.
             // third is the destination.

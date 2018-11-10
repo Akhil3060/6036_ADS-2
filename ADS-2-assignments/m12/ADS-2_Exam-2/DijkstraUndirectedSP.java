@@ -125,6 +125,7 @@ public class DijkstraUndirectedSP {
         return distTo[v];
     }
 
+    // public E
     /**
      * Returns true if there is a path between the source vertex {@code s} and
      * vertex {@code v}.
