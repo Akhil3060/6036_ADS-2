@@ -15,26 +15,35 @@ public class Solution {
         EdgeWeightedDigraph g = new EdgeWeightedDigraph(v);
         for (int i = 0; i < e; i++) {
             String[] line = sc.nextLine().split(" ");
-                int a = Integer.parseInt(line[0]);
-                int b = Integer.parseInt(line[1]);
-                Double c = Double.parseDouble(line[2]);
-                Edge di = new Edge(a,b,c);
-                // Edge di1 = new Edge(b,a,c);
-                // if (a != b) {
-                    // g.addEdge(di1);
-                    g.addEdge(di);
-                // }
+            int a = Integer.parseInt(line[0]);
+            int b = Integer.parseInt(line[1]);
+            Double c = Double.parseDouble(line[2]);
+            Edge di = new Edge(a, b, c);
+            // Edge di1 = new Edge(b,a,c);
+            // if (a != b) {
+            // g.addEdge(di1);
+            g.addEdge(di);
+            // }
         }
         // System.out.println(g.display());
         String caseToGo =  sc.nextLine();
         switch (caseToGo) {
         case "Graph":
-                System.out.println(g);
-                //Print the Graph Object.
+            System.out.println(g);
+            //Print the Graph Object.
             break;
 
         case "DirectedPaths":
+            String[] line = sc.nextLine().split(" ");
+            int a = Integer.parseInt(line[0]);
+            int b = Integer.parseInt(line[1]);
+            DijkstraUndirectedSP dsp = new DijkstraUndirectedSP(g, b);
+            if (!dsp.hasPathTo(a)) {
+                System.out.println("No Path Found.");
+            } else {
+                System.out.println(dsp.distTo[a]);
 
+            }
             // Handle the case of DirectedPaths, where two integers are given.
             // First is the source and second is the destination.
             // If the path exists print the distance between them.
