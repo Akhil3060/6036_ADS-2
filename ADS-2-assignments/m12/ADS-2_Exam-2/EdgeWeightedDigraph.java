@@ -163,7 +163,10 @@ public class EdgeWeightedDigraph {
         validateVertex(v);
         validateVertex(w);
         adj[v].add(e);
+        adj[w].add(e);
+
         indegree[w]++;
+        indegree[v]++;
         E++;
     }
 
@@ -232,7 +235,7 @@ public class EdgeWeightedDigraph {
     public String toString() {
         StringBuilder s = new StringBuilder();
         // s.append(V + " " + E + NEWLINE);
-        s.append(V + " vertices " + (E/2) + " edges" + NEWLINE);
+        s.append(V + " vertices " + E + " edges" + NEWLINE);
         for (int v = 0; v < V; v++) {
             s.append(v + ": ");
             for (Edge e : adj[v]) {

@@ -19,38 +19,39 @@ public class Solution {
                 int b = Integer.parseInt(line[1]);
                 Double c = Double.parseDouble(line[2]);
                 Edge di = new Edge(a,b,c);
-                Edge di1 = new Edge(b,a,c);
+                // Edge di1 = new Edge(b,a,c);
                 // if (a != b) {
-                    g.addEdge(di1);
+                    // g.addEdge(di1);
                     g.addEdge(di);
                 // }
         }
         // System.out.println(g.display());
-        System.out.println(g);
-        // String caseToGo = null;
-        // switch (caseToGo) {
-        // case "Graph":
-        //     //Print the Graph Object.
-        //     break;
+        String caseToGo =  sc.nextLine();
+        switch (caseToGo) {
+        case "Graph":
+                System.out.println(g);
+                //Print the Graph Object.
+            break;
 
-        // case "DirectedPaths":
-        //     // Handle the case of DirectedPaths, where two integers are given.
-        //     // First is the source and second is the destination.
-        //     // If the path exists print the distance between them.
-        //     // Other wise print "No Path Found."
-        //     break;
+        case "DirectedPaths":
 
-        // case "ViaPaths":
-        //     // Handle the case of ViaPaths, where three integers are given.
-        //     // First is the source and second is the via is the one where path should pass throuh.
-        //     // third is the destination.
-        //     // If the path exists print the distance between them.
-        //     // Other wise print "No Path Found."
-        //     break;
+            // Handle the case of DirectedPaths, where two integers are given.
+            // First is the source and second is the destination.
+            // If the path exists print the distance between them.
+            // Other wise print "No Path Found."
+            break;
 
-        // default:
-        //     break;
-        // }
+        case "ViaPaths":
+            // Handle the case of ViaPaths, where three integers are given.
+            // First is the source and second is the via is the one where path should pass throuh.
+            // third is the destination.
+            // If the path exists print the distance between them.
+            // Other wise print "No Path Found."
+            break;
+
+        default:
+            break;
+        }
 
     }
 }

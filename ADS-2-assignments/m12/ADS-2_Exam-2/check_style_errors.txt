@@ -143,15 +143,13 @@ Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:150: Line is longer than 80 characters (found 99). [LineLength]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:157: Line is longer than 80 characters (found 86). [LineLength]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:160:25: Parameter e should be final. [FinalParameters]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:178:31: Parameter v should be final. [FinalParameters]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:191:26: Parameter v should be final. [FinalParameters]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:204:25: Parameter v should be final. [FinalParameters]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:211: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:229: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:235:39: '/' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:235:40: '/' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:181:31: Parameter v should be final. [FinalParameters]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:194:26: Parameter v should be final. [FinalParameters]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:207:25: Parameter v should be final. [FinalParameters]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:214: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:232: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 51 errors.
+Checkstyle ends with 49 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -278,12 +276,9 @@ Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:8:29: Parameter args should be final. [FinalParameters]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:21:38: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:21:40: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:22:39: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:22:41: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:37: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:45: Line is longer than 80 characters (found 101). [LineLength]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:46: Line is longer than 80 characters (found 98). [LineLength]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Stack.java:29: Line is longer than 80 characters (found 89). [LineLength]
