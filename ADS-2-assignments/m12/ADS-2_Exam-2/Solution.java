@@ -14,6 +14,11 @@ final class Solution {
 
     // }
 
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         // Self loops are not allowed...
         // Parallel Edges are allowed...
@@ -124,7 +129,8 @@ final class Solution {
 
 
             // Handle the case of ViaPaths, where three integers are given.
-            // First is the source and second is the via is the one where path should pass throuh.
+            // First is the source and second is the via is the one where
+            //  path should pass throuh.
             // third is the destination.
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
@@ -136,3 +142,5 @@ final class Solution {
 
     }
 }
+
+
