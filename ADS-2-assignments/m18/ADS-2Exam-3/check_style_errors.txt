@@ -386,17 +386,16 @@ Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:114:39: Parameter file should be final. [FinalParameters]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:126:66: Parameter file should be final. [FinalParameters]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:127: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:159:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:159:15: Parameter st should be final. [FinalParameters]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:238:20: '4' is a magic number. [MagicNumber]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:239:20: '5' is a magic number. [MagicNumber]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:240:20: '6' is a magic number. [MagicNumber]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:241:20: '7' is a magic number. [MagicNumber]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:242:20: '8' is a magic number. [MagicNumber]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:243:20: '9' is a magic number. [MagicNumber]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:270:5: '(' should be on the previous line. [MethodParamPad]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:153:17: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:165:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:244:20: '4' is a magic number. [MagicNumber]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:245:20: '5' is a magic number. [MagicNumber]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:246:20: '6' is a magic number. [MagicNumber]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:247:20: '7' is a magic number. [MagicNumber]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:248:20: '8' is a magic number. [MagicNumber]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:249:20: '9' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 19 errors.
 Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\TrieSET.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\TrieSET.java:40:5: Missing a Javadoc comment. [JavadocVariable]

@@ -229,8 +229,8 @@ Your Output:
 [8, 7, 3, 2, 8, 3]
 873283
 Exception in thread "main" java.lang.NullPointerException
-	at T9.getSuggestions(Solution.java:275)
-	at T9.t9(Solution.java:333)
+	at T9.getSuggestions(Solution.java:281)
+	at T9.t9(Solution.java:339)
 	at Solution.main(Solution.java:93)
 ----------------------------------------
 

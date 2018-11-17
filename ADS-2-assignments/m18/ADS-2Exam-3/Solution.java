@@ -146,7 +146,13 @@ final class Solution {
 /**
  * Class for t 9.
  */
-class T9 {
+final class T9 {
+    /**
+     * Constructs the object.
+     */
+    private T9(){
+
+    }
     /**
      * TST obj.
      */
@@ -156,7 +162,7 @@ class T9 {
      *
      * @param      st    { parameter_description }
      */
-    public T9(BinarySearchST<String, Integer> st) {
+    public T9(final BinarySearchST<String, Integer> st) {
         // String[] wordlist = toReadFile(file);
         // System.out.println(st);
 
@@ -266,8 +272,8 @@ class T9 {
      *
      * @return     The suggestions.
      */
-    public Iterable<String> getSuggestions
-    (final Iterable<String> words, final int k) {
+    public Iterable<String> getSuggestions(final Iterable<String> words,
+                                           final int k) {
         HashMap<Integer, String> hp = new HashMap<>();
         String[] temp1 = new String[k];
         // int j = 0;
