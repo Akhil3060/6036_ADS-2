@@ -26,7 +26,7 @@ final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String cases = scan.nextLine();
 
@@ -111,7 +111,7 @@ final class Solution {
      *
      * @return     { description_of_the_return_value }
      */
-    public static String[] toReadFile(String file) {
+    public static String[] toReadFile(final String file) {
         In in = new In(file);
         return in.readAllStrings();
     }
@@ -123,8 +123,10 @@ final class Solution {
      *
      * @return     { description_of_the_return_value }
      */
-    public static BinarySearchST<String, Integer> loadDictionary(String file) {
-        BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
+    public static BinarySearchST<String, Integer>
+    loadDictionary(String file) {
+        BinarySearchST<String, Integer>  st =
+            new BinarySearchST<String, Integer>();
         Scanner sc = new Scanner(System.in);
         // System.out.println(toReadFile(file).length);
         // System.out.println(Arrays.toString(toReadFile(file)));
@@ -150,7 +152,7 @@ final class T9 {
     /**
      * Constructs the object.
      */
-    private T9(){
+    private T9() {
 
     }
     /**
