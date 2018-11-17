@@ -243,12 +243,12 @@ final class T9 {
         // final int one=1,two=2
         hp.put(0 + 1 + 1, arr2);
         hp.put(0 + 1 + 2, arr3);
-        hp.put(0 + 4, arr4);
-        hp.put(0 + 5, arr5);
-        hp.put(0 + 6, arr6);
-        hp.put(0 + 7, arr7);
-        hp.put(0 + 8, arr8);
-        hp.put(0 + 9, arr9);
+        hp.put(0 + 1 + 3, arr4);
+        hp.put(0 + 1 + 4, arr5);
+        hp.put(0 + 1 + 5, arr6);
+        hp.put(0 + 1 + 6, arr7);
+        hp.put(0 + 1 + 7, arr8);
+        hp.put(0 + 1 + 8, arr9);
 
         String[] query = t9Signature.split("");
         System.out.println(Arrays.toString(query));

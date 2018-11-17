@@ -384,12 +384,12 @@ Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:36: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:127:20: Parameter file should be final. [FinalParameters]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:167:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:246:20: '4' is a magic number. [MagicNumber]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:247:20: '5' is a magic number. [MagicNumber]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:248:20: '6' is a magic number. [MagicNumber]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:249:20: '7' is a magic number. [MagicNumber]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:250:20: '8' is a magic number. [MagicNumber]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:251:20: '9' is a magic number. [MagicNumber]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:246:24: '3' is a magic number. [MagicNumber]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:247:24: '4' is a magic number. [MagicNumber]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:248:24: '5' is a magic number. [MagicNumber]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:249:24: '6' is a magic number. [MagicNumber]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:250:24: '7' is a magic number. [MagicNumber]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:251:24: '8' is a magic number. [MagicNumber]
 Audit done.
 Checkstyle ends with 15 errors.
 Starting audit...
