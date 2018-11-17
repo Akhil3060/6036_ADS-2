@@ -1,5 +1,5 @@
 // import java.util.import java.util.ArrayList;
-import java.util.ArrayList;
+// import java.util.ArrayList;
 
 import java.util.Scanner;
 import java.util.Arrays;
@@ -140,7 +140,7 @@ class T9 {
     }
 
     public Iterable<String> potentialWords(String t9Signature) {
-        HashMap<Integer,String[]> hp = new HashMap<>();
+        HashMap<Integer, String[]> hp = new HashMap<>();
 
         // ArrayList<String> l2 =
         //     new ArrayList<String>(Arrays.asList("a", "b", "c"));
@@ -169,27 +169,27 @@ class T9 {
 
 
 
-        String[] arr2={"a", "b", "c"};
-        String[] arr3={"d", "e", "f"};
-        String[] arr4={"g", "h", "i"};
-        String[] arr5={"j", "k", "l"};
-        String[] arr6={"m", "m", "o"};
-        String[] arr7={"p", "q", "r" , "s"};
-        String[] arr8={"t", "u", "v"};
-        String[] arr9={"w", "x", "y" , "z"};
+        String[] arr2 = {"a", "b", "c"};
+        String[] arr3 = {"d", "e", "f"};
+        String[] arr4 = {"g", "h", "i"};
+        String[] arr5 = {"j", "k", "l"};
+        String[] arr6 = {"m", "m", "o"};
+        String[] arr7 = {"p", "q", "r" , "s"};
+        String[] arr8 = {"t", "u", "v"};
+        String[] arr9 = {"w", "x", "y" , "z"};
 
 
+        // final int one=1,two=2
+        hp.put(0 + 2, arr2);
+        hp.put(0 + 3, arr3);
+        hp.put(0 + 4, arr4);
+        hp.put(0 + 5, arr5);
+        hp.put(0 + 6, arr6);
+        hp.put(0 + 7, arr7);
+        hp.put(0 + 8, arr8);
+        hp.put(0 + 9, arr9);
 
-        hp.put(2,arr2);
-        hp.put(3,arr3);
-        hp.put(4,arr4);
-        hp.put(5,arr5);
-        hp.put(6,arr6);
-        hp.put(7,arr7);
-        hp.put(8,arr8);
-        hp.put(9,arr9);
-
-        String[] query=t9Signature.split("");
+        String[] query = t9Signature.split("");
         System.out.println(Arrays.toString(query));
         TrieST tst = new TrieST();
 
@@ -204,7 +204,16 @@ class T9 {
     }
 
     // return all possibilities(words), find top k with highest frequency.
-    public Iterable<String> getSuggestions(Iterable<String> words, int k) {
+
+    /**
+     * Gets the suggestions.
+     *
+     * @param      words  The words
+     * @param      k      { parameter_description }
+     *
+     * @return     The suggestions.
+     */
+    public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
         HashMap<Integer, String> hp = new HashMap<>();
         String[] temp1 = new String[k];
         // int j = 0;
@@ -256,7 +265,17 @@ class T9 {
 
     // final output
     // Don't modify this method.
-    public Iterable<String> t9(String t9Signature, int k) {
+
+
+    /**
+     * t9Signature.
+     *
+     * @param      t9Signature  The t 9 signature
+     * @param      k            { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Iterable<String> t9(final String t9Signature, final  int k) {
         return getSuggestions(potentialWords(t9Signature), k);
     }
 }
