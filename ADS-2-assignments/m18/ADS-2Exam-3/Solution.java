@@ -94,7 +94,7 @@ public class Solution {
         // System.out.println(Arrays.toString(toReadFile(file)));
         String[] wordlist = toReadFile(file);
         for (String each : wordlist) {
-            each=each.toLowerCase();
+            each = each.toLowerCase();
             if (st.contains(each)) {
                 int val = st.get(each);
                 st.put(each, val + 1);
@@ -108,15 +108,26 @@ public class Solution {
 }
 
 class T9 {
-
+    TST tt = new TST();
     public T9(BinarySearchST<String, Integer> st) {
+        // String[] wordlist = toReadFile(file);
+        // System.out.println(st);
+
+
+        for (String str : st.keys()) {
+            tt.put(str, st.get(str));
+            // System.out.println(str);
+        }
+        // System.out.println(st.keys());
+        // while()
         // your code goes here
     }
 
     // get all the prefixes that match with given prefix.
     public Iterable<String> getAllWords(String prefix) {
+
         // your code goes here
-        return null;
+        return tt.keysWithPrefix(prefix);
     }
 
     public Iterable<String> potentialWords(String t9Signature) {
