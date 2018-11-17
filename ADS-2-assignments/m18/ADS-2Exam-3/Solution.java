@@ -1,6 +1,11 @@
 import java.util.Scanner;
 import java.util.Arrays;
 import java.lang.String;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
+
 // import java.io.*;
 
 public class Solution {
@@ -56,9 +61,10 @@ public class Solution {
                 String line = scan.nextLine();
                 bag.add(line);
             }
-            for (String each : t9.getSuggestions(bag, k)) {
-                System.out.println(each);
-            }
+            t9.getSuggestions(bag, k);
+            // for (String each : t9.getSuggestions(bag, k)) {
+            //     System.out.println(each);
+            // }
 
             break;
 
@@ -137,6 +143,62 @@ class T9 {
 
     // return all possibilities(words), find top k with highest frequency.
     public Iterable<String> getSuggestions(Iterable<String> words, int k) {
+        HashMap<Integer,String> hp = new HashMap<>();
+        int[] temp = new int[6];
+        String[] temp1 = new String[k];
+        int j = 0;
+        MaxPQ mp = new MaxPQ();
+        for (String each : words) {
+            // System.out.println(tt.get(each));
+            // System.out.println(each+" - "+tt.keysWithPrefix(each));
+            // String[] newWords = tt.keysWithPrefix(each);
+            int counter = 0;
+            for (Object i : tt.keysWithPrefix(each)) {
+                counter++;
+            }
+
+            mp.insert(counter);
+            hp.put( counter,each);
+            temp[j] = counter;
+            // temp1[j] = each;
+            // Arrays.sort(temp);
+            // System.out.println(hp);
+            // System.out.println(counter);
+            // System.out.println( tt.keysWithPrefix(each));
+        }
+        int c=0;
+        for(Object qq : mp){
+            if(c==k){
+                break;
+            }
+            else{
+
+                // System.out.println(hp.get(qq));
+                temp1[c] = hp.get(qq);
+                c++;
+            }
+            // System.out.println(qq);
+        }
+        Arrays.sort(temp1);
+        for(String s:temp1){
+            System.out.println(s);
+        }
+        // for(String str:hp){
+
+        // }
+        // System.out.println(mp.max());
+        // for (int kk : hp.values()) {
+        //     System.out.print(kk + ",");
+        // }
+        // System.out.println();
+
+        // Map<String, Integer> treeMap = new TreeMap<String, Integer>(hp);
+        // for (int kk : treeMap.values()) {
+        //     System.out.print(kk + ",");
+        // }
+
+        // System.out.println(hp.values());
+        // System.out.println(k);
         // your code goes here
         return null;
     }
