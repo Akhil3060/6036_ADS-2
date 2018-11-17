@@ -1,3 +1,6 @@
+// import java.util.import java.util.ArrayList;
+import java.util.ArrayList;
+
 import java.util.Scanner;
 import java.util.Arrays;
 import java.lang.String;
@@ -61,10 +64,10 @@ public class Solution {
                 String line = scan.nextLine();
                 bag.add(line);
             }
-            t9.getSuggestions(bag, k);
-            // for (String each : t9.getSuggestions(bag, k)) {
-            //     System.out.println(each);
-            // }
+            // t9.getSuggestions(bag, k);
+            for (String each : t9.getSuggestions(bag, k)) {
+                System.out.println(each);
+            }
 
             break;
 
@@ -137,41 +140,88 @@ class T9 {
     }
 
     public Iterable<String> potentialWords(String t9Signature) {
+        HashMap<Integer,String[]> hp = new HashMap<>();
+
+        // ArrayList<String> l2 =
+        //     new ArrayList<String>(Arrays.asList("a", "b", "c"));
+
+        // ArrayList<String> l3 =
+        //     new ArrayList<String>(Arrays.asList("d", "e", "f"));
+
+        // ArrayList<String> l4 =
+        //     new ArrayList<String>(Arrays.asList("g", "h", "i"));
+
+        // ArrayList<String> l5 =
+        //     new ArrayList<String>(Arrays.asList("j", "k", "l"));
+
+        // ArrayList<String> l6 =
+        //     new ArrayList<String>(Arrays.asList("m", "m", "o"));
+
+        // ArrayList<String> l7 =
+        //     new ArrayList<String>(Arrays.asList("p", "q", "r" , "s"));
+
+        // ArrayList<String> l8 =
+        //     new ArrayList<String>(Arrays.asList("t", "u", "v"));
+
+        // ArrayList<String> l9 =
+        //     new ArrayList<String>(Arrays.asList("w", "x", "y" , "z"));
+
+
+
+
+        String[] arr2={"a", "b", "c"};
+        String[] arr3={"d", "e", "f"};
+        String[] arr4={"g", "h", "i"};
+        String[] arr5={"j", "k", "l"};
+        String[] arr6={"m", "m", "o"};
+        String[] arr7={"p", "q", "r" , "s"};
+        String[] arr8={"t", "u", "v"};
+        String[] arr9={"w", "x", "y" , "z"};
+
+
+
+        hp.put(2,arr2);
+        hp.put(3,arr3);
+        hp.put(4,arr4);
+        hp.put(5,arr5);
+        hp.put(6,arr6);
+        hp.put(7,arr7);
+        hp.put(8,arr8);
+        hp.put(9,arr9);
+
+        String[] query=t9Signature.split("");
+        System.out.println(Arrays.toString(query));
+        TrieST tst = new TrieST();
+
+        System.out.println(t9Signature);
+
+
+        // ArrayList<String> l9 =
+        //     new ArrayList<String>(Arrays.asList("a", "b", "c"));
+        // System.out.println(l1);
         // your code goes here
         return null;
     }
 
     // return all possibilities(words), find top k with highest frequency.
     public Iterable<String> getSuggestions(Iterable<String> words, int k) {
-        HashMap<Integer,String> hp = new HashMap<>();
-        int[] temp = new int[6];
+        HashMap<Integer, String> hp = new HashMap<>();
         String[] temp1 = new String[k];
-        int j = 0;
+        // int j = 0;
         MaxPQ mp = new MaxPQ();
         for (String each : words) {
-            // System.out.println(tt.get(each));
-            // System.out.println(each+" - "+tt.keysWithPrefix(each));
-            // String[] newWords = tt.keysWithPrefix(each);
             int counter = 0;
             for (Object i : tt.keysWithPrefix(each)) {
                 counter++;
             }
-
             mp.insert(counter);
-            hp.put( counter,each);
-            temp[j] = counter;
-            // temp1[j] = each;
-            // Arrays.sort(temp);
-            // System.out.println(hp);
-            // System.out.println(counter);
-            // System.out.println( tt.keysWithPrefix(each));
+            hp.put(counter, each);
         }
-        int c=0;
-        for(Object qq : mp){
-            if(c==k){
+        int c = 0;
+        for (Object qq : mp) {
+            if (c == k) {
                 break;
-            }
-            else{
+            } else {
 
                 // System.out.println(hp.get(qq));
                 temp1[c] = hp.get(qq);
@@ -180,9 +230,9 @@ class T9 {
             // System.out.println(qq);
         }
         Arrays.sort(temp1);
-        for(String s:temp1){
-            System.out.println(s);
-        }
+        // for (String s : temp1) {
+        //     System.out.println(s);
+        // }
         // for(String str:hp){
 
         // }
@@ -200,7 +250,8 @@ class T9 {
         // System.out.println(hp.values());
         // System.out.println(k);
         // your code goes here
-        return null;
+        Iterable<String> iterable = Arrays.asList(temp1);
+        return iterable;
     }
 
     // final output

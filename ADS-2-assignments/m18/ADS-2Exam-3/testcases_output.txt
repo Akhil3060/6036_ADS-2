@@ -157,8 +157,10 @@ fine
 seeking
 
 Your Output: 
+[4, 3, 5, 5, 6]
+43556
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:45)
+	at Solution.main(Solution.java:48)
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
@@ -224,9 +226,11 @@ paper
 keep
 
 Your Output: 
+[8, 7, 3, 2, 8, 3]
+873283
 Exception in thread "main" java.lang.NullPointerException
-	at T9.getSuggestions(Solution.java:151)
-	at T9.t9(Solution.java:209)
-	at Solution.main(Solution.java:78)
+	at T9.getSuggestions(Solution.java:212)
+	at T9.t9(Solution.java:260)
+	at Solution.main(Solution.java:81)
 ----------------------------------------
 
