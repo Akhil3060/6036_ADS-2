@@ -2,8 +2,19 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
-    public static void main(String[] args) {
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = Integer.parseInt(sc.nextLine());
         int b = Integer.parseInt(sc.nextLine());
@@ -125,7 +136,8 @@ class KruskalMST {
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
                         System.err.println("Edge " + f
-                                           + " violates cut optimality conditions");
+                                           + " violates cut"
+                                           + " optimality conditions");
                         return false;
                     }
                 }
