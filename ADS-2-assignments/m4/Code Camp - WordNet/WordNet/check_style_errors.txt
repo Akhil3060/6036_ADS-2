@@ -419,15 +419,11 @@ Starting audit...
 Audit done.
 Checkstyle ends with 51 errors.
 Starting audit...
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:22: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:23: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:28: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:29: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:30: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:31: Line is longer than 80 characters (found 115). [LineLength]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:22:52: '+' should be on a new line. [OperatorWrap]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:23:67: '+' should be on a new line. [OperatorWrap]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:33:61: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
