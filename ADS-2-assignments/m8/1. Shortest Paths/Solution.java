@@ -1,9 +1,22 @@
 import java.util.Scanner;
 import java.util.HashMap;
 
+/**
+ * Class Solution.
+ */
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution(){
 
-class Solution {
-    public static void main(String[] args) {
+    }
+    /**
+     * Main Function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
