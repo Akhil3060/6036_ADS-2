@@ -2,13 +2,18 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-final public class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
     private Solution() {
 
     }
+    /**
+     * Main.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         String[] wordList = loadwordLists();
         //Your code goes here...
@@ -30,7 +35,11 @@ final public class Solution {
             System.out.println(s.toString());
         }
     }
-
+    /**
+     * Load words from file.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static String[] loadwordLists() {
         In in = new In("/Files/dictionary-algs4.txt");
         String[] wordLists = in.readAllStrings();
