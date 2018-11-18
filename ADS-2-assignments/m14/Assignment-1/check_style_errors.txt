@@ -175,9 +175,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 29 errors.
 Starting audit...
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m14\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m14\Assignment-1\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m14\Assignment-1\TST.java:48: Line is longer than 80 characters (found 84). [LineLength]
