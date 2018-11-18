@@ -378,9 +378,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 102 errors.
 Starting audit...
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:11:23: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m8\1. Shortest Paths\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m8\1. Shortest Paths\Stack.java:29: Line is longer than 80 characters (found 89). [LineLength]
