@@ -20,6 +20,7 @@ final class Solution {
 		Scanner sc = new Scanner(System.in);
 		int n = Integer.parseInt(sc.nextLine());
 		String[] tokens = new String[n];
+		//complexity n reads input
 		for (int i = 0; i < n; i++) {
 			tokens[i] = sc.nextLine();
 		} lsd.sort(tokens, tokens[0].length());
