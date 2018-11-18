@@ -19,9 +19,9 @@ final class Solution {
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         try {
-            WordNet wordNet = new WordNet("Files/" +
-                                          sc.nextLine(), "Files/" +
-                                          sc.nextLine());
+            WordNet wordNet = new WordNet("Files/"
+                                          + sc.nextLine(), "Files/"
+                                          + sc.nextLine());
             switch (sc.nextLine()) {
             case "Graph": System.out.println(wordNet.g);
                 break;
@@ -30,8 +30,8 @@ final class Solution {
                     String[] tokens = sc.nextLine().split(" ");
                     Integer dist = wordNet.distance(tokens[0], tokens[1]);
                     String ancestor = wordNet.sap(tokens[0], tokens[1]);
-                    System.out.println("distance = " + dist +
-                                       ", " + "ancestor = " + ancestor);
+                    System.out.println("distance = " + dist
+                                       + ", " + "ancestor = " + ancestor);
 
                 }
             default:
