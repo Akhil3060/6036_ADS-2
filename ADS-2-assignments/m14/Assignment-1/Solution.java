@@ -1,8 +1,16 @@
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
+final public class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
 
-public class Solution {
-	public static void main(String[] args) {
-		String[] wordList = loadwordLists();
+    }
+    public static void main(final String[] args) {
+        String[] wordList = loadwordLists();
         //Your code goes here...
         TST tst = new TST();
         for (int i = 0; i < wordList.length; i++) {
@@ -21,11 +29,11 @@ public class Solution {
         for (String s : st) {
             System.out.println(s.toString());
         }
-	}
+    }
 
-	public static String[] loadwordLists() {
-		In in = new In("/Files/dictionary-algs4.txt");
-		String[] wordLists = in.readAllStrings();
-		return wordLists;
-	}
+    public static String[] loadwordLists() {
+        In in = new In("/Files/dictionary-algs4.txt");
+        String[] wordLists = in.readAllStrings();
+        return wordLists;
+    }
 }

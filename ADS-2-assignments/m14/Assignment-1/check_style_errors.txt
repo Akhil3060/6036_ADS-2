@@ -176,14 +176,11 @@ Audit done.
 Checkstyle ends with 29 errors.
 Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m14\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m14\Assignment-1\Solution.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m14\Assignment-1\Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m14\Assignment-1\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m14\Assignment-1\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m14\Assignment-1\Solution.java:4:33: Parameter args should be final. [FinalParameters]
-[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m14\Assignment-1\Solution.java:26:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m14\Assignment-1\Solution.java:5:7: 'public' modifier out of order with the JLS suggestions. [ModifierOrder]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m14\Assignment-1\Solution.java:12:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m14\Assignment-1\Solution.java:34:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m14\Assignment-1\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\Git repo\ADS - 2\6036_ADS-2\ADS-2-assignments\m14\Assignment-1\TST.java:48: Line is longer than 80 characters (found 84). [LineLength]
