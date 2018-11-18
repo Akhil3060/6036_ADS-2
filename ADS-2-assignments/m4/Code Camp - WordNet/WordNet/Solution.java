@@ -11,7 +11,12 @@ final class Solution {
 	private Solution() {
 
 	}
-	public static void main(String[] args) {
+	/**
+	 * Main function.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		try {
 			WordNet wordNet = new WordNet("Files/" + sc.nextLine(), "Files/" + sc.nextLine());
