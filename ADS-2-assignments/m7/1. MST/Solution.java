@@ -1,5 +1,7 @@
 import java.util.Scanner;
-
+/**
+ * Class for solution.
+ */
 public class Solution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -13,11 +15,27 @@ public class Solution {
 }
 
 
-
+/**
+ * Class for kruskal mst.
+ */
 class KruskalMST {
+    /**
+     * double var.
+     */
     private static final double FLOATING_POINT_EPSILON = 1E-12;
+    /**
+     * weight.
+     */
     private double weight;
+    /**
+     * Queue of type EDGE.
+     */
     private Queue<Edge> mst = new Queue<Edge>();
+    /**
+     * Constructs the object.
+     *
+     * @param      g     { parameter_description }
+     */
     KruskalMST(final EdgeWeightedGraph g) {
         MinPQ<Edge> pq = new MinPQ<Edge>();
         for (Edge e : g.edges()) {
@@ -37,16 +55,31 @@ class KruskalMST {
         }
         assert check(g);
     }
-
+    /**
+     * Edges.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Iterable<Edge> edges() {
         return mst;
     }
 
-
+    /**
+     * weight.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public double weight() {
         return weight;
     }
-    private boolean check( EdgeWeightedGraph g) {
+    /**
+     * check.
+     *
+     * @param      g     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private boolean check(final EdgeWeightedGraph g) {
 
         // check total weight
         double total = 0.0;
@@ -92,7 +125,7 @@ class KruskalMST {
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
                         System.err.println("Edge " + f
-                           + " violates cut optimality conditions");
+                                           + " violates cut optimality conditions");
                         return false;
                     }
                 }
